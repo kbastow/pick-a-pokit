@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Shoelace -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.26/dist/shoelace/shoelace.css">
+    <!-- Fullpage.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    <!-- Glider.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pick-A-Pokit</title>
+</head>
+<body>
+   
+    <div id="back-to-top">
+        <sl-icon title="Back to Top" class="home" name="house"></sl-icon>
+    </div>
+
+    <div id="navbar">
+        <a href="https://www.facebook.com/pickapokit/" title="Facebook" target="_blank" class="social"><sl-icon name="facebook"></sl-icon></a>
+        <a href="https://www.instagram.com/pickapokit/" title="Instagram" target="_blank" class="social"><sl-icon name="instagram"></sl-icon></a>
+    </div>
+
+    <div class="orderbtn">
+        <img src="images/pocket.png" alt='Pocket' class="pocketbtn">
+       <span class="orderalert">
+            <sl-alert type="info" duration="4000">
+                <sl-icon slot="icon" name="truck"></sl-icon>
+                <strong>Choose your delivery partner</strong>
+                    <br>
+                    <a class="delivery" href="https://www.ubereats.com/au/melbourne/food-delivery/pickapokit/AVFcTHrUSkmpThlrhFpcdQ" title="UberEats" target="_blank">UberEats</a>
+                    <br>
+                    <a class="delivery" href="https://www.menulog.com.au/restaurants-pick-a-pokit" title="Menulog" target="_blank">Menulog</a>
+                    <br>
+                    <a class="delivery" href="https://www.doordash.com/store/pick-a-pokit-cremorne-1017113/en-AU" title="Doordash" target="_blank">Doordash</a>
+            </sl-alert>
+        </span>
+    </div>
+
+    <div id="fullpage">        
+        <!-- Home Section -->
+        <div class="section section-home">
+            <div class="bg"></div>
+            <img id="logo" src="images/logo-white.png" alt="logo">
+            <h3 class="view-menu">View Menu</h3>
+            <sl-icon class="jumpto-s3" name="arrow-down-circle-fill"></sl-icon>
+        </div>
+
+        <!-- About Section -->
+        <div class="section section-about">
+            <div class="bg"></div>
+            <h1>ABOUT</h1>
+            <p class="about">In Egypt, Hawawshi is a street food staple. Traditionally it is pita bread filled with minced meat and spices. Our pockets are inspired by the original Egyptian street food, with a healthy modern approach. Full of flavour and the best fresh ingredients.</p>
+            <div class="glider-contain multiple">
+                <sl-icon class="glider-prev" title="Prev" name="arrow-left-circle-fill"></sl-icon>
+                <div class="glider">
+                    <figure><img src="images/Figure-1.png" alt="Instagram" class="gallery-img"></figure>
+                    <figure><img src="images/Figure-2.png" alt="Instagram" class="gallery-img"></figure>
+                    <figure><img src="images/Figure-3.png" alt="Instagram" class="gallery-img"></figure>
+                    <figure><img src="images/Figure-4.png" alt="Instagram" class="gallery-img"></figure>
+                    <figure><img src="images/Figure-5.png" alt="Instagram" class="gallery-img"></figure>
+                    <figure><img src="images/Figure-6.png" alt="Instagram" class="gallery-img"></figure>
+                </div>
+                <sl-icon class="glider-next" title="Next" name="arrow-right-circle-fill"></sl-icon>
+                <h4>@pickapokit</h4>
+            </div>
+            <sl-icon class="jumpto-s3" title="View Menu" name="arrow-down-circle-fill"></sl-icon>
+        </div>
+        
+        <!-- Menu Section -->
+        <div class="section section-menu">
+            <div class="bg"></div>
+            <h1>MENU</h1>
+            <div class="slide sl-menu-1">
+                <h2>Veggie Pockets</h2>
+                <ul class="menu-list">
+                    <li>Just Falafels: our homemade falafels w salad, pickles, hummus, tahini, chilli (vg)</li>
+                    <li>· Add crispy eggplant & roast capsicum (vg)</li>
+                    <li>· Add crispy cauliflower (vg)</li>
+                    <li>· Add mushrooms & grilled halloumi (v)</li>
+                    <li> ~ </li>
+                    <li>Cauliflower Heads: dukkah crumbed crispy cauliflower w vegan mayo, salad, pickles, hummus (vg)</li>
+                    <li>· Add grilled halloumi (v)</li>
+                    <li> ~ </li>
+                    <li>Vegan Shawarma: lemon ginger tofu w roast garlic, roast capsicum, chickpeas, black beans, tahini, salad, pickles, hummus (vg)</li>
+                    <li> ~ </li>
+                    <li>The Fun-Guy: mixed mushrooms, baba ghanoush, salad, pickles, hummus (vg)</li>
+                    <li>· Add crispy eggplant (vg)</li>
+                    <li> ~ </li>
+                    <li>Vegan (vg) Vegetarian (v)</li>
+                    <sl-icon class="next-slide-btn" title="Next" name="arrow-right-circle-fill"></sl-icon>
+                </ul>
+            </div>
+            <div class="slide sl-menu-2">
+                <h2>Meat Pockets</h2> 
+                <ul class="menu-list">
+                    <li>Coconut Chicken: coconut and ginger poached chicken w basil and rocket pesto, salad, pickles</li>
+                    <li> ~ </li>
+                    <li>Grilled Chicken: Egyptian spiced marinated chicken w basil and rocket pesto, salad, pickles</li>
+                    <li>· Add three cheeses and truffle oil</li>
+                    <li> ~ </li>
+                    <li>Beef Brisket: slow cooked beef brisket w salad, pickles, hummus</li>
+                    <li> ~ </li>
+                    <li>Eye Fillet Steak: seared steak sliced w pastrami, halloumi, salad, pickles, hummus</li>
+                    <li>· Add fried egg</li>
+                    <li> ~ </li>
+                    <li>Lamb Kofta: marinated lamb meatballs w labne, salad, pickles</li>
+                    <li>· Add halloumi</li>
+                    <li> ~ </li>
+                    <li>Crispy Flathead: w basil and rocket pesto, salad, pickles</li>
+                    <li>· Add smoked salmon</li>
+                    <li> ~ </li>
+                    <li>Smoked Salmon: w basil and rocket pesto, w salad, ricotta, capers & dill</li>
+                    <li>· Add smoked salmon</li>
+                    <sl-icon class="prev-slide-btn" title="Prev" name="arrow-left-circle-fill"></sl-icon>
+                    <sl-icon class="next-slide-btn" title="Next" name="arrow-right-circle-fill"></sl-icon>
+                </ul>
+            </div>
+            <div class="slide sl-menu-3"> 
+                <h2>Pick-A-Pokit Meals</h2> 
+                <ul class="menu-list-meals">
+                    <li>Mini Pocket Meal: one mini pocket of your choice served w house salad, falafels & hummus</li>
+                    <li> ~ </li>
+                    <li>Double Down Meal: two mini pockets of your choice served w your choice of house salad or shoestring fries</li>
+                    <li> ~ </li>
+                    <li><h2>Pocket-less Meals</h2></li>
+                    <li><em>Our pocket-less meals include two of our house salads and dip, served with your choice of protein</em></li>
+                    <li> ~ </li>
+                    <li>Veggie Proteins: Falafels (vg) | Grilled halloumi (v) | Crispy cauliflower (vg) | Mixed mushrooms (vg) | Lemon ginger tofu (vg)</li>
+                    <li> ~ </li>
+                    <li>Meat Proteins: Coconut chicken | Grilled chicken | Beef brisket | Eye fillet steak | Lamb kofta| Crispy flathead | Smoked salmon</li>
+                    <sl-icon class="prev-slide-btn" title="Prev" name="arrow-left-circle-fill"></sl-icon>
+                    <sl-icon class="next-slide-btn" title="Next" name="arrow-right-circle-fill"></sl-icon>
+                </ul>
+            </div>
+            <div class="slide sl-menu-4"> 
+                <h2>Sides and Extras</h2> 
+                <ul class="menu-list">
+                    <li>Falafel</li>
+                    <li> ~ </li>
+                    <li>Pita Bread</li>
+                    <li> ~ </li>
+                    <li>Shoestring Fries</li>
+                    <li> ~ </li>
+                    <li>Grilled Halloumi</li>
+                    <li> ~ </li>
+                    <li>Dips: Hummus | Basil & Rocket Pesto | Baba ghanoush | Labne</li>
+                    <sl-icon class="prev-slide-btn" title="Prev" name="arrow-left-circle-fill"></sl-icon>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section section-contact">
+            <div class="bg"></div>
+            <h1>CONTACT</h1>
+            <p class="contact">Monday - Saturday<br>11am - 3pm<br>5pm - 9pm</p>
+            <p class="contact">106 Swan Street<br>Cremorne VIC 3121</p>
+            <p class="contact">P: 03 9428 7407<br>E: <a href="mailto:pickapokit@gmail.com">pickapokit@gmail.com</a></p>
+            <footer id="footer">
+                <p>Pick-A-Pokit 2021 | Web Design by Kate Bastow</p>
+            </footer>
+        </div>
+    </div>
+
+    <!--Fullpage.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js" integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ==" crossorigin="anonymous"></script>
+    <!--Shoelace-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.26/dist/shoelace/shoelace.esm.js"></script>
+    <!--Glider Image Gallery Slider-->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <!--GSAP Animation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>

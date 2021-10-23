@@ -1,0 +1,606 @@
+*, *:before, *:after {
+   box-sizing: border-box;
+
+}
+
+body {
+   font-family: 'Aleo', serif;
+   font-weight: 300;
+   color: #ffffff;;
+   text-align: center;
+}
+
+/********* Navigation **********/
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+   background: #ffffff;
+}
+
+#fp-nav ul li .fp-tooltip {
+   color: #ffffff;
+   font-family: 'Lato', sans-serif;
+   font-size: 1.2em;
+} 
+
+/******* Section Styling ********/
+.section {
+   height: 100vh;
+}
+
+.section .fp-tableCell {
+   margin-top: none;
+}
+
+.section .fp-tableCell p {
+   padding: 0% 10%;
+   font-size: 0.8em;
+   text-shadow: 1px 1px 2px #000000;
+}
+
+h1, h2, h3, h4 {
+   font-weight: 500;
+   color: #ffffff;
+   text-shadow: 1px 1px 2px #000000;
+}
+
+/******* Back to Top ************/
+
+#back-to-top {
+   position: fixed;
+   top: 0px;
+   z-index: 9999;
+   opacity: 0.9;
+}
+
+.home {
+   color: #ffffff;
+   font-size: 2em;
+   float: left;
+   padding: 20px 20px;
+   z-index: 9999;
+}
+
+#back-to-top .home:hover {
+   transform: scale(1.2);
+   color: #39752F;
+}
+
+/******* Social Navigation Bar *******/
+
+#navbar {
+   width: 100%;
+   height: 40px;
+   top: 0px;
+   position: absolute;
+   z-index: 999;
+   opacity: 0.9;
+}
+
+.social {
+   color: #ffffff;
+   font-size: 2em;
+   float: right;
+   padding: 20px 10px;
+   z-index: 999;
+}
+
+#navbar a:hover {
+   transform: scale(1.2);
+   color: #39752F;
+}
+
+/******* Order Now Icon *******/
+
+.orderbtn {
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   width: 8%;
+   z-index: 999;
+   opacity: 0.9;
+}
+
+.pocketbtn {
+   width: 80%;
+   animation-name: pocket;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes pocket {
+   50% {transform: scale(1.1);}
+}
+
+.orderbtn img:hover {
+   transform: scale(1.2);
+}
+
+a.delivery {
+   font-weight: 400;
+   font-size: 1.2em;
+   text-decoration: underline;
+   color: black;
+}
+
+.orderalert sl-alert {
+   display: flex;
+   text-align: left;
+   width: max-content;
+   right: 150%;
+}
+
+/****** Home Section ********/
+
+#logo {
+   display: inherit;
+   margin: auto;
+   width: 30%;
+   padding-top: 5%;
+}
+
+.section-home .view-menu {
+   text-transform: uppercase;
+   padding-top: 50px;
+}
+
+.jumpto-s3 {
+   color: #ffffff;
+   font-size: 2em;
+   padding: 10px;
+   bottom: 0;
+   animation-name: downbtn;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes downbtn {
+   0% {color: #ffffff;}
+   50% {color: #88CB7C;}
+   100% {color: #ffffff;}
+}
+
+.section-home .bg {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url("images/pita.png");
+   opacity: 0.9;
+   z-index: -1;
+}
+
+/********* About Section ********/
+.section-about h1 {
+   padding-top: 30px;
+}
+
+.section-about p.about {
+   line-height: 1.8em;
+   font-size: 1em;
+   padding: 0% 20%;
+   text-shadow: 1px 1px 2px #000000;
+}
+
+.glider-contain {
+   width: 80%;
+   margin-top: -1%;
+   margin-bottom: -2%;
+}
+
+figure {
+   background: #ffffff !important;
+   display: block;
+   margin: 1.2em;
+   padding: 0.8em;
+   box-shadow: 1px 1px 8px #000000;
+}
+
+.glider-prev {
+   margin-left: -20px;
+   padding: 10px;
+   color: #ffffff;
+}
+
+.glider-next {
+   margin-right: -20px;
+   padding: 10px;
+   color: #ffffff;
+}
+
+.section-about .bg {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url("images/chickpeas.jpg");
+   z-index: -1;
+}
+
+/******** Menu Section *******/
+
+/* Slides Nav */
+.fp-slidesNav {
+   vertical-align: inherit;
+} 
+.section-menu h1 {
+   padding-top: 50px;
+   text-transform: uppercase;
+   text-shadow: 1px 1px 2px #000000;
+}
+
+.menu-list {
+   padding-inline-end: 40px;
+   margin: 0% 10%;
+   padding-bottom: 30%;
+}
+
+.section-menu .menu-list li {
+   font-size: 0.9em;
+   font-weight: 500;
+   line-height: 1.4em;
+   list-style: none;
+   text-shadow: 1px 1px 2px #000000;
+}
+
+.menu-list-meals {
+   padding-inline-end: 40px;
+   padding-bottom: 30%;
+   margin: 0% 10%;
+}
+
+.section-menu .menu-list-meals li {
+   font-size: 0.9em;
+   font-weight: 500;
+   line-height: 1.4em;
+   list-style: none;
+   text-shadow: 1px 1px 2px #000000;
+}
+
+h2 {
+   font-size: 1.2em;
+   text-transform: uppercase;
+   text-shadow: 1px 1px 2px #000000;
+}
+
+.section-menu .bg {
+   position: absolute;
+   width: 100%;
+   top: -1vh;
+   left: 0;
+   bottom: 0;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url("images/food.jpg");
+   opacity: 0.8;
+   z-index: -1;
+}
+
+.next-slide-btn {
+   padding: 20px;
+   font-size: 1.2em;
+}
+
+.prev-slide-btn {
+   padding: 20px;
+   font-size: 1.2em;
+}
+
+/************* Contact Section *************/
+
+.section-contact p.contact {
+   line-height: 1.2em;
+   font-size: 1.5em;
+   padding: 0% 10%;
+   text-shadow: 1px 1px 2px #000000;
+}
+
+p.contact a {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.section-contact .bg {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url("images/mint.jpg");
+   opacity: 0.9;
+   z-index: -1;
+}
+
+/************** Footer Section *************/
+
+#footer {
+   background-color: #000000;
+   opacity: 0.5;
+   width: 100%;
+   height: auto;
+   position: absolute;
+   bottom: 0;
+}
+
+#footer p {
+   color: #ffffff;
+   font-size: 0.8em;
+}
+
+
+/************ Responsive **********/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+.section {
+   height: 100vh;
+}
+
+.orderalert sl-alert {
+   transform: scale(0.8);
+   right: 100%;
+}
+
+.social {
+   font-size: 1.8em;
+}
+
+#fp-nav ul li .fp-tooltip {
+   visibility: hidden;
+} 
+
+.orderbtn {
+   width: 15%;
+}
+
+/*Home Section*/
+#logo {
+   margin-top: 20%;
+   width: 60%;
+}
+
+.section-home .view-menu {
+   margin-top: 50px;
+   font-size: 0.8em;
+}
+
+.home {
+   font-size: 1.8em;
+}
+
+#down {
+   font-size: 1.8em;
+}
+
+/*About Section*/
+.section-about h1 {
+   font-size: 1.5em;
+   padding-top: 20px;
+}
+
+.section-about h4 {
+   font-size: 1em;
+   margin: 0%;
+   padding-bottom: 20px;
+}
+
+.section-about p.about {
+   line-height: 1.5em;
+   font-size: 1.2em;
+   font-weight: 500;
+   padding: 0% 10%;
+}
+
+.glider-contain {
+   width: 80%;
+}
+
+figure {
+   margin: 1.2em;
+   padding: 0.8em;
+}
+
+.glider-prev {
+   font-size: 2em;
+   margin-left: 2%;
+}
+
+.glider-next {
+   font-size: 2em;
+   margin-right: 2%;
+}
+
+/*Menu Section*/
+.section-menu h1 {
+   padding-top: 10%;
+   font-size: 1.5em;
+}
+
+.menu-list {
+   padding-inline-end: 40px;
+   padding-bottom: 30%;
+   margin: 0% 5%;
+}
+
+.section-menu .menu-list li {
+   font-size: 1em;
+   font-weight: 500;
+   line-height: 1.2em;
+}
+
+.menu-list-meals {
+   padding-inline-end: 40px;
+   padding-bottom: 30%;
+   margin: 0% 5%;
+}
+
+.section-menu .menu-list-meals li {
+   font-size: 1em;
+   font-weight: 500;
+   line-height: 1.2em;
+}
+
+h2 {
+   font-size: 1.5em;
+}
+
+.section-menu .menu-list-meals li h2 {
+   font-size: 1.2em;
+}
+
+/*Contact Section*/
+.section-contact h1 {
+   font-size: 1.8em;
+}
+
+.section-contact p.contact {
+   line-height: 1.5em;
+   font-size: 1em;
+   font-weight: 500;
+}
+
+/*Footer*/
+#footer p {
+   font-size: 0.6em;
+}
+}
+
+@media screen and (max-width: 767px) {
+
+.section {
+   height: 100vh;
+}
+
+.orderalert sl-alert {
+   transform: scale(0.6);
+   right: 200%;
+}
+
+a.delivery {
+   font-weight: 500;
+   font-size: 1.5em;
+}
+
+.social {
+   font-size: 1.5em;
+}
+
+#fp-nav ul li .fp-tooltip {
+   visibility: hidden;
+} 
+
+.orderbtn {
+   width: 20%;
+}
+
+/*Home Section*/
+#logo {
+   margin-top: 20%;
+   width: 60%;
+}
+
+.home {
+   font-size: 1.5em;
+}
+
+#down {
+   font-size: 1.5em;
+}
+
+/*About Section*/
+.section-about h1 {
+   font-size: 1.5em;
+   padding-top: 20px;
+}
+
+.section-about h4 {
+   font-size: 0.8em;
+   margin: 0%;
+   padding-bottom: 20px;
+}
+
+.section-about p.about {
+   line-height: 1.5em;
+   font-size: 0.8em;
+   font-weight: 500;
+   padding: 0% 10%;
+}
+
+.glider-contain {
+   width: 60%;
+}
+
+figure {
+   margin: 1.2em;
+   padding: 0.8em;
+}
+
+.glider-prev {
+   font-size: 1.5em;
+   margin-left: 2%;
+}
+
+.glider-next {
+   font-size: 1.5em;
+   margin-right: 2%;
+}
+
+/*Menu Section*/
+.section-menu h1 {
+   padding-top: 20px;
+   font-size: 1.5em;
+}
+
+.menu-list {
+   padding-inline-end: 40px;
+   padding-bottom: 30%;
+   margin: 0% 5%;
+}
+
+.section-menu .menu-list li {
+   font-size: 0.8em;
+   font-weight: 500;
+   line-height: 1.2em;
+}
+
+.menu-list-meals {
+   padding-inline-end: 40px;
+   padding-bottom: 30%;
+   margin: 0% 5%;
+}
+
+.section-menu .menu-list-meals li {
+   font-size: 0.8em;
+   font-weight: 500;
+   line-height: 1.2em;
+}
+
+h2 {
+   font-size: 1.2em;
+}
+
+/*Contact Section*/
+.section-contact h1 {
+   font-size: 1.5em;
+}
+
+.section-contact p.contact {
+   line-height: 1.2em;
+   font-size: 1.2em;
+   font-weight: 500;
+}
+
+/*Footer*/
+#footer p {
+   font-size: 0.4em;
+}
+}
